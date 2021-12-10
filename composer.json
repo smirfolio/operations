@@ -1,0 +1,17 @@
+{
+    "name": "samir/mc-gill-test",
+    "description": "Test assessment: operators implementation",
+    "type": "project",
+    "authors": [
+        {
+            "name": "SamirMtl",
+            "email": "ben.sghaier.samir@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "request\\" : "src/"
+        }
+    }
+}

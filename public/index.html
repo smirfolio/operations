@@ -1,0 +1,47 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Operator</title>
+        <link rel="stylesheet" media="all" href="/public/css/style.css">
+        <script src="/public/js/script.js"></script>
+    </head>
+    <body>
+        <div class="form-style-2">
+            <div class="form-style-2-heading">Provide The Operation</div>
+            <form id="operation" action="" method="post">
+                <p>You have to much this pattern : (add|concat|sortasc|sortdesc) XX YY ZZ YYY</p>
+                <p>The numbers must be separated by spaces and could be 1, 2 or more digits</p>
+                <label for="field1">
+                    <span>Operation  <span class="required">*</span>
+                </span>
+                <input type="text" class="input-field" name="operation" value="" />
+                <div class="error-message"><span id="error"></span></div>
+            </label>
+        
+            <label><span> </span><input type="submit" value="Submit" /></label>
+            </form>
+            </div>
+            <div class="form-style-2">
+                <p>open/closed principle: To be able to extend the operations: </p>
+            <ol>
+                <li>
+                    Add the operand to the regex rule 
+                    <pre>const regex = /^((add|concat|sortasc|sortdesc)\s+\d+(?:\s+\d+){0,5}|(add|concat|sortasc)\s+\d+(?:\s+\d+){0,5}\s)$/;</pre> </li>
+                <li>
+                    Adjust the help text
+                </li>
+                <li>
+                    Implement the method in the RequestHandler class that auto detect if the it implement the operation or not (handler())
+                </li>
+            </ol>
+            
+        <p>
+            To be able to run this app please excute : php -S localhost:8085
+        </p>
+        <p>Requirements: Ubuntu linux, php 7 > , <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API#browser_compatibility" target="_blank">
+            compatible Browser</a></p>
+            </div>
+
+    </body>
+</html>

@@ -1,0 +1,9 @@
+DirectoryIndex index.php
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCon %{REQUEST_FILENAME} !-f
+RewriteCon %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php
